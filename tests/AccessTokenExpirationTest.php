@@ -1,9 +1,9 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
-use BulgarianHealer\Twitch\Objects\AccessToken;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Objects\AccessToken;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
 
 class AccessTokenExpirationTest extends TestCase
 {

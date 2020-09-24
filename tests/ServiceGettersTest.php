@@ -1,13 +1,13 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientSecretException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
-use BulgarianHealer\Twitch\Twitch;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresClientSecretException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Twitch;
 
 class ServiceGettersTest extends TestCase
 {

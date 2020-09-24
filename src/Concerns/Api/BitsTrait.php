@@ -1,10 +1,10 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use bulgarianhealer\Twitch\Result;
 
 trait BitsTrait
 {
@@ -18,7 +18,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-cheermotes
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getCheermotes(array $parameters = []): Result
     {
@@ -33,7 +33,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-bits-leaderboard
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getBitsLeaderboard(array $parameters = []): Result
     {
@@ -46,7 +46,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-extension-transactions
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getExtensionTransactions(array $parameters = []): Result
     {

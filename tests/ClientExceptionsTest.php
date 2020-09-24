@@ -1,6 +1,6 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
@@ -8,8 +8,8 @@ use GuzzleHttp\Exception\ServerException;
 use GuzzleHttp\Exception\TransferException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use BulgarianHealer\Twitch\Result;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Result;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
 
 class ClientExceptionsTest extends TestCase
 {

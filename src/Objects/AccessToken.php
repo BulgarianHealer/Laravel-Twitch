@@ -1,6 +1,6 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Objects;
+namespace bulgarianhealer\Twitch\Objects;
 
 use Illuminate\Contracts\Support\Arrayable;
 

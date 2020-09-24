@@ -1,17 +1,17 @@
 <?php
 
-namespace BulgarianHealer\Twitch;
+namespace bulgarianhealer\Twitch;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
-use BulgarianHealer\Twitch\Concerns\Api;
-use BulgarianHealer\Twitch\Concerns\AuthenticationTrait;
-use BulgarianHealer\Twitch\Concerns\Validation\ValidationTrait;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientSecretException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
-use BulgarianHealer\Twitch\Helpers\Paginator;
+use bulgarianhealer\Twitch\Concerns\Api;
+use bulgarianhealer\Twitch\Concerns\AuthenticationTrait;
+use bulgarianhealer\Twitch\Concerns\Validation\ValidationTrait;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresClientSecretException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
+use bulgarianhealer\Twitch\Helpers\Paginator;
 
 class Twitch
 {
@@ -50,7 +50,7 @@ class Twitch
     /**
      * Paginator instance.
      *
-     * @var \BulgarianHealer\Twitch\Helpers\Paginator
+     * @var \bulgarianhealer\Twitch\Helpers\Paginator
      */
     protected $paginator;
 
@@ -118,7 +118,7 @@ class Twitch
      * Get client id.
      *
      * @return string
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      */
     public function getClientId(): string
     {
@@ -167,7 +167,7 @@ class Twitch
      * Get client secret.
      *
      * @return string
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientSecretException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientSecretException
      */
     public function getClientSecret(): string
     {
@@ -216,7 +216,7 @@ class Twitch
      * Get Redirect URI.
      *
      * @return string
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresRedirectUriException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresRedirectUriException
      */
     public function getRedirectUri(): string
     {
@@ -266,7 +266,7 @@ class Twitch
      *
      * @return string        Twitch token
      * @return string|null
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
      */
     public function getToken(): ?string
     {
@@ -314,10 +314,10 @@ class Twitch
     /**
      * @param string $path
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
-     * @return \BulgarianHealer\Twitch\Result
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
+     * @return \bulgarianhealer\Twitch\Result
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
      */
     public function get(string $path = '', array $parameters = [], Paginator $paginator = null): Result
     {
@@ -327,11 +327,11 @@ class Twitch
     /**
      * @param string $path
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
      * @param array|null $body
-     * @return \BulgarianHealer\Twitch\Result
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @return \bulgarianhealer\Twitch\Result
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      */
     public function post(string $path = '', array $parameters = [], Paginator $paginator = null, array $body = null): Result
     {
@@ -341,11 +341,11 @@ class Twitch
     /**
      * @param string $path
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
      * @param array|null $body
-     * @return \BulgarianHealer\Twitch\Result
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @return \bulgarianhealer\Twitch\Result
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      */
     public function put(string $path = '', array $parameters = [], Paginator $paginator = null, array $body = null): Result
     {
@@ -355,11 +355,11 @@ class Twitch
     /**
      * @param string $path
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
      * @param array|null $body
-     * @return \BulgarianHealer\Twitch\Result
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @return \bulgarianhealer\Twitch\Result
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      */
     public function patch(string $path = '', array $parameters = [], Paginator $paginator = null, array $body = null): Result
     {
@@ -369,11 +369,11 @@ class Twitch
     /**
      * @param string $path
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
      * @param array|null $body
-     * @return \BulgarianHealer\Twitch\Result
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @return \bulgarianhealer\Twitch\Result
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      */
     public function delete(string $path = '', array $parameters = [], Paginator $paginator = null, array $body = null): Result
     {
@@ -386,13 +386,13 @@ class Twitch
      * @param string $method HTTP method
      * @param string $path Query path
      * @param array $parameters Query parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator Paginator instance
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator Paginator instance
      * @param array|null $body JSON body
      *
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      *
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresAuthenticationException
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresAuthenticationException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      * @noinspection PhpDocMissingThrowsInspection
      */
     public function query(string $method = 'GET', string $path = '', array $parameters = [], Paginator $paginator = null, array $body = null): Result
@@ -469,7 +469,7 @@ class Twitch
      *
      * @param bool $json Body is JSON
      * @return array
-     * @throws \BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException
+     * @throws \bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException
      * @noinspection PhpDocMissingThrowsInspection
      */
     private function buildHeaders(bool $json = false): array

@@ -1,12 +1,12 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
-use BulgarianHealer\Twitch\Enums\Scope;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException;
-use BulgarianHealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
-use BulgarianHealer\Twitch\Facades\Twitch as TwitchFacade;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Enums\Scope;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresClientIdException;
+use bulgarianhealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
+use bulgarianhealer\Twitch\Facades\Twitch as TwitchFacade;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
 
 class RedirectUriTest extends TestCase
 {

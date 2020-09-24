@@ -1,11 +1,11 @@
 {
-    "name": "BulgarianHealer/laravel-twitch",
+    "name": "bulgarianhealer/laravel-twitch",
     "description": "Twitch PHP Wrapper for Laravel",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "BulgarianHealer"
+            "name": "bulgarianhealer"
         }
     ],
     "require": {
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BulgarianHealer\\Twitch\\": "src"
+            "bulgarianhealer\\Twitch\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BulgarianHealer\\Twitch\\Tests\\": "tests"
+            "bulgarianhealer\\Twitch\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -37,10 +37,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BulgarianHealer\\Twitch\\Providers\\TwitchServiceProvider"
+                "bulgarianhealer\\Twitch\\Providers\\TwitchServiceProvider"
             ],
             "aliases": {
-                "Twitch": "BulgarianHealer\\Twitch\\Facades\\Twitch"
+                "Twitch": "bulgarianhealer\\Twitch\\Facades\\Twitch"
             }
         }
     }

@@ -1,11 +1,11 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
 use Illuminate\Support\Str;
-use BulgarianHealer\Twitch\Facades\Twitch as TwitchFacade;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
-use BulgarianHealer\Twitch\Twitch;
+use bulgarianhealer\Twitch\Facades\Twitch as TwitchFacade;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Twitch;
 
 class ServiceSettersTest extends TestCase
 {

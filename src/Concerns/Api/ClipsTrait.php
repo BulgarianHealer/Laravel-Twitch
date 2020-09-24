@@ -1,10 +1,10 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use bulgarianhealer\Twitch\Result;
 
 trait ClipsTrait
 {
@@ -26,7 +26,7 @@ trait ClipsTrait
      * @see https://dev.twitch.tv/docs/api/reference#create-clip
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function createClip(array $parameters = []): Result
     {
@@ -46,7 +46,7 @@ trait ClipsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-clips
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function getClips(array $parameters = []): Result
     {

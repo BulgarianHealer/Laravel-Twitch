@@ -1,8 +1,8 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Helpers;
+namespace bulgarianhealer\Twitch\Helpers;
 
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Result;
 use stdClass;
 
 class Paginator
@@ -34,7 +34,7 @@ class Paginator
     /**
      * Create Paginator from Result instance.
      *
-     * @param \BulgarianHealer\Twitch\Result $result Result instance
+     * @param \bulgarianhealer\Twitch\Result $result Result instance
      * @return self   Paginator instance
      */
     public static function from(Result $result): self

@@ -1,11 +1,11 @@
 <?php
 
-namespace BulgarianHealer\Twitch;
+namespace bulgarianhealer\Twitch;
 
 use Exception;
 use GuzzleHttp\Psr7\Response;
 use Psr\Http\Message\ResponseInterface;
-use BulgarianHealer\Twitch\Helpers\Paginator;
+use bulgarianhealer\Twitch\Helpers\Paginator;
 
 class Result
 {
@@ -75,7 +75,7 @@ class Result
     /**
      * Original Twitch instance.
      *
-     * @var \BulgarianHealer\Twitch\Twitch
+     * @var \bulgarianhealer\Twitch\Twitch
      */
     public $twitch;
 

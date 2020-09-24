@@ -1,10 +1,10 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use bulgarianhealer\Twitch\Result;
 
 trait SearchTrait
 {
@@ -17,7 +17,7 @@ trait SearchTrait
      * @see https://dev.twitch.tv/docs/api/reference/#search-categories
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function searchCategories(array $parameters = []): Result
     {
@@ -34,7 +34,7 @@ trait SearchTrait
      * @see https://dev.twitch.tv/docs/api/reference/#search-channels
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function searchChannels(array $parameters = []): Result
     {

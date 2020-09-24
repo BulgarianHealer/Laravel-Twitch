@@ -1,9 +1,9 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Result;
 
 trait ExtensionsTrait
 {
@@ -15,7 +15,7 @@ trait ExtensionsTrait
      *
      * @see https://dev.twitch.tv/docs/api/reference#get-user-extensions
      *
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function getAuthedUserExtensions(): Result
     {
@@ -28,7 +28,7 @@ trait ExtensionsTrait
      *
      * @see https://dev.twitch.tv/docs/api/reference#get-user-active-extensions
      *
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function getAuthedUserActiveExtensions(): Result
     {
@@ -41,7 +41,7 @@ trait ExtensionsTrait
      *
      * @see "https://dev.twitch.tv/docs/api/reference/#update-user-extensions"
      *
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function disableAllExtensions(): Result
     {
@@ -55,7 +55,7 @@ trait ExtensionsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#update-user-extensions
      *
      * @param string|null $parameter Id of the Extension that should be deactivated
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function disableUserExtensionById(string $parameter = null): Result
     {
@@ -69,7 +69,7 @@ trait ExtensionsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#update-user-extensions
      *
      * @param string|null $parameter Name of the Extension that should be deactivated
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function disableUserExtensionByName(string $parameter = null): Result
     {
@@ -86,7 +86,7 @@ trait ExtensionsTrait
      * @param string|null $method Method that will be used to disable extensions
      * @param string|null $parameter Parameter that will be used to disable Extensions
      * @param bool $disabled Weather the set value should be false
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function updateUserExtensions(string $method = null, string $parameter = null, bool $disabled = false): Result
     {

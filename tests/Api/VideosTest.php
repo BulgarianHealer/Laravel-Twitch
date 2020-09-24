@@ -1,9 +1,9 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests\Api;
+namespace bulgarianhealer\Twitch\Tests\Api;
 
 use InvalidArgumentException;
-use BulgarianHealer\Twitch\Tests\TestCases\ApiTestCase;
+use bulgarianhealer\Twitch\Tests\TestCases\ApiTestCase;
 
 class VideosTest extends ApiTestCase
 {

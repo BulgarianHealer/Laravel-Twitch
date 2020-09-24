@@ -1,9 +1,9 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests\TestCases;
+namespace bulgarianhealer\Twitch\Tests\TestCases;
 
-use BulgarianHealer\Twitch\Result;
-use BulgarianHealer\Twitch\Twitch;
+use bulgarianhealer\Twitch\Result;
+use bulgarianhealer\Twitch\Twitch;
 
 abstract class ApiTestCase extends TestCase
 {

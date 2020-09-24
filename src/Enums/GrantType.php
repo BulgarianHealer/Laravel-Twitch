@@ -1,6 +1,6 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Enums;
+namespace bulgarianhealer\Twitch\Enums;
 
 class GrantType
 {

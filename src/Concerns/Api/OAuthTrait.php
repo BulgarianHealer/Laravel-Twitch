@@ -1,10 +1,10 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Enums\GrantType;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Enums\GrantType;
+use bulgarianhealer\Twitch\Result;
 
 trait OAuthTrait
 {
@@ -49,7 +49,7 @@ trait OAuthTrait
      * @param string|null $code
      * @param string $grantType
      * @param array $scopes
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getOAuthToken(?string $code = null, string $grantType = GrantType::AUTHORIZATION_CODE, array $scopes = []): Result
     {

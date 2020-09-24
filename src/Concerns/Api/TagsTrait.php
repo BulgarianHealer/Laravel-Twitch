@@ -1,11 +1,11 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
-use BulgarianHealer\Twitch\Helpers\Paginator;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use bulgarianhealer\Twitch\Helpers\Paginator;
+use bulgarianhealer\Twitch\Result;
 
 trait TagsTrait
 {
@@ -19,7 +19,7 @@ trait TagsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-stream-tags
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getStreamTags(array $parameters = []): Result
     {
@@ -37,8 +37,8 @@ trait TagsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-all-stream-tags
      *
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
-     * @return \BulgarianHealer\Twitch\Result
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getAllStreamTags(array $parameters = [], Paginator $paginator = null): Result
     {
@@ -58,7 +58,7 @@ trait TagsTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function replaceStreamTags(array $parameters = [], array $body = []): Result
     {

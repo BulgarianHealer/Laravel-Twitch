@@ -1,9 +1,9 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Providers;
+namespace bulgarianhealer\Twitch\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use BulgarianHealer\Twitch\Twitch;
+use bulgarianhealer\Twitch\Twitch;
 
 class TwitchServiceProvider extends ServiceProvider
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Tests;
+namespace bulgarianhealer\Twitch\Tests;
 
 use GuzzleHttp\Psr7\Response;
-use BulgarianHealer\Twitch\Helpers\Paginator;
-use BulgarianHealer\Twitch\Result;
-use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
+use bulgarianhealer\Twitch\Helpers\Paginator;
+use bulgarianhealer\Twitch\Result;
+use bulgarianhealer\Twitch\Tests\TestCases\TestCase;
 
 class PaginationTest extends TestCase
 {

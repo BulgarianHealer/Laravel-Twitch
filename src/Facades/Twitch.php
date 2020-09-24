@@ -1,14 +1,14 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Facades;
+namespace bulgarianhealer\Twitch\Facades;
 
 use Illuminate\Support\Facades\Facade;
-use BulgarianHealer\Twitch\Twitch as TwitchService;
+use bulgarianhealer\Twitch\Twitch as TwitchService;
 
 /**
- * @method static \BulgarianHealer\Twitch\Twitch withClientId(string $clientId)
- * @method static \BulgarianHealer\Twitch\Twitch withClientSecret(string $clientSecret)
- * @method static \BulgarianHealer\Twitch\Twitch withRedirectUri(string $redirectUri)
+ * @method static \bulgarianhealer\Twitch\Twitch withClientId(string $clientId)
+ * @method static \bulgarianhealer\Twitch\Twitch withClientSecret(string $clientSecret)
+ * @method static \bulgarianhealer\Twitch\Twitch withRedirectUri(string $redirectUri)
  */
 class Twitch extends Facade
 {

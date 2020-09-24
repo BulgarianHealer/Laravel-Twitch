@@ -1,6 +1,6 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Exceptions;
+namespace bulgarianhealer\Twitch\Exceptions;
 
 use Exception;
 

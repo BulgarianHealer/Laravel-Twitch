@@ -1,11 +1,11 @@
 <?php
 
-namespace BulgarianHealer\Twitch\Concerns\Api;
+namespace bulgarianhealer\Twitch\Concerns\Api;
 
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
-use BulgarianHealer\Twitch\Helpers\Paginator;
-use BulgarianHealer\Twitch\Result;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use bulgarianhealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use bulgarianhealer\Twitch\Helpers\Paginator;
+use bulgarianhealer\Twitch\Result;
 
 trait StreamsTrait
 {
@@ -18,7 +18,7 @@ trait StreamsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-stream-key
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getStreamKey(array $parameters = []): Result
     {
@@ -37,8 +37,8 @@ trait StreamsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-streams
      *
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator Paginator instance
-     * @return \BulgarianHealer\Twitch\Result Result instance
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator Paginator instance
+     * @return \bulgarianhealer\Twitch\Result Result instance
      */
     public function getStreams(array $parameters = [], Paginator $paginator = null): Result
     {
@@ -55,7 +55,7 @@ trait StreamsTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function createStreamMarker(array $parameters = [], array $body = []): Result
     {
@@ -72,8 +72,8 @@ trait StreamsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-stream-markers
      *
      * @param array $parameters
-     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
-     * @return \BulgarianHealer\Twitch\Result
+     * @param \bulgarianhealer\Twitch\Helpers\Paginator|null $paginator
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getStreamMarkers(array $parameters = [], Paginator $paginator = null): Result
     {
@@ -88,7 +88,7 @@ trait StreamsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-channel-information
      *
      * @param array $parameters
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function getChannels(array $parameters = []): Result
     {
@@ -104,7 +104,7 @@ trait StreamsTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \BulgarianHealer\Twitch\Result
+     * @return \bulgarianhealer\Twitch\Result
      */
     public function updateChannels(array $parameters = [], array $body = []): Result
     {
