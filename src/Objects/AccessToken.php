@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Twitch\Objects;
+namespace BulgarianHealer\Twitch\Objects;
 
 use Illuminate\Contracts\Support\Arrayable;
 

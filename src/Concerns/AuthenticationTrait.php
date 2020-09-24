@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns;
+namespace BulgarianHealer\Twitch\Concerns;
 
 use Illuminate\Contracts\Cache\Repository;
-use romanzipp\Twitch\Enums\GrantType;
-use romanzipp\Twitch\Objects\AccessToken;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Enums\GrantType;
+use BulgarianHealer\Twitch\Objects\AccessToken;
+use BulgarianHealer\Twitch\Result;
 
 trait AuthenticationTrait
 {
@@ -36,7 +36,7 @@ trait AuthenticationTrait
      * Fetch and possibly cache the OAuth token.
      *
      * @see https://dev.twitch.tv/docs/authentication/getting-tokens-oauth#oauth-client-credentials-flow
-     * @return \romanzipp\Twitch\Objects\AccessToken|null
+     * @return \BulgarianHealer\Twitch\Objects\AccessToken|null
      */
     protected function getClientCredentials(): ?AccessToken
     {
@@ -64,7 +64,7 @@ trait AuthenticationTrait
     /**
      * Possibly get a cached and not-expired version of the Access Token.
      *
-     * @return \romanzipp\Twitch\Objects\AccessToken|null
+     * @return \BulgarianHealer\Twitch\Objects\AccessToken|null
      * @noinspection PhpDocMissingThrowsInspection
      */
     protected function getCachedClientCredentialsToken(): ?AccessToken
@@ -91,7 +91,7 @@ trait AuthenticationTrait
     /**
      * Store the client credentials in cache.
      *
-     * @param \romanzipp\Twitch\Objects\AccessToken $token
+     * @param \BulgarianHealer\Twitch\Objects\AccessToken $token
      * @noinspection PhpDocMissingThrowsInspection
      */
     protected function storeClientCredentialsToken(AccessToken $token): void

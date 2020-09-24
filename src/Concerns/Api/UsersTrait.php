@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Helpers\Paginator;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Helpers\Paginator;
+use BulgarianHealer\Twitch\Result;
 
 trait UsersTrait
 {
@@ -19,7 +19,7 @@ trait UsersTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function createUserFollows(array $parameters = [], array $body = []): Result
     {
@@ -32,7 +32,7 @@ trait UsersTrait
      * Deletes a specified user from the followers of a specified channel.
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function deleteUserFollows(array $parameters = []): Result
     {
@@ -48,7 +48,7 @@ trait UsersTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-users
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result Result instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function getUsers(array $parameters = []): Result
     {
@@ -63,8 +63,8 @@ trait UsersTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-users-follows
      *
      * @param array $parameters
-     * @param \romanzipp\Twitch\Helpers\Paginator|null $paginator
-     * @return \romanzipp\Twitch\Result
+     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getUsersFollows(array $parameters = [], Paginator $paginator = null): Result
     {
@@ -79,7 +79,7 @@ trait UsersTrait
      * @see https://dev.twitch.tv/docs/api/reference#update-user
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result Result instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function updateUser(array $parameters = []): Result
     {
@@ -94,7 +94,7 @@ trait UsersTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-user-extensions
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getUserExtensions(array $parameters = []): Result
     {
@@ -107,7 +107,7 @@ trait UsersTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-user-active-extensions
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getUserActiveExtensions(array $parameters = []): Result
     {
@@ -125,7 +125,7 @@ trait UsersTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function updateUserExtension(array $parameters = [], array $body = []): Result
     {

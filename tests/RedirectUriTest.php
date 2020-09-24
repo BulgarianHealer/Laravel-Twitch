@@ -1,12 +1,12 @@
 <?php
 
-namespace romanzipp\Twitch\Tests;
+namespace BulgarianHealer\Twitch\Tests;
 
-use romanzipp\Twitch\Enums\Scope;
-use romanzipp\Twitch\Exceptions\RequestRequiresClientIdException;
-use romanzipp\Twitch\Exceptions\RequestRequiresRedirectUriException;
-use romanzipp\Twitch\Facades\Twitch as TwitchFacade;
-use romanzipp\Twitch\Tests\TestCases\TestCase;
+use BulgarianHealer\Twitch\Enums\Scope;
+use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientIdException;
+use BulgarianHealer\Twitch\Exceptions\RequestRequiresRedirectUriException;
+use BulgarianHealer\Twitch\Facades\Twitch as TwitchFacade;
+use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
 
 class RedirectUriTest extends TestCase
 {

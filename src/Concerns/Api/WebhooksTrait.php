@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Result;
 
 trait WebhooksTrait
 {
@@ -17,7 +17,7 @@ trait WebhooksTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-webhook-subscriptions
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getWebhookSubscriptions(array $parameters = []): Result
     {
@@ -31,7 +31,7 @@ trait WebhooksTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function subscribeWebhook(array $parameters = [], array $body = []): Result
     {
@@ -52,7 +52,7 @@ trait WebhooksTrait
      *
      * @param array $parameters
      * @param array $body
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function unsubscribeWebhook(array $parameters = [], array $body = []): Result
     {

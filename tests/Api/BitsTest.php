@@ -1,8 +1,8 @@
 <?php
 
-namespace romanzipp\Twitch\Tests\Api;
+namespace BulgarianHealer\Twitch\Tests\Api;
 
-use romanzipp\Twitch\Tests\TestCases\ApiTestCase;
+use BulgarianHealer\Twitch\Tests\TestCases\ApiTestCase;
 
 class BitsTest extends ApiTestCase
 {

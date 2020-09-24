@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Twitch\Enums;
+namespace BulgarianHealer\Twitch\Enums;
 
 class Scope
 {

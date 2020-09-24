@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Result;
 
 trait AdsTrait
 {
@@ -17,7 +17,7 @@ trait AdsTrait
      * @see https://dev.twitch.tv/docs/api/reference#start-commercial
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result Result instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function startCommercial(array $parameters = []): Result
     {

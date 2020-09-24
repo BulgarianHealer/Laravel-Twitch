@@ -1,13 +1,13 @@
 <?php
 
-namespace romanzipp\Twitch\Tests\TestCases;
+namespace BulgarianHealer\Twitch\Tests\TestCases;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use romanzipp\Twitch\Facades\Twitch as TwitchFacade;
-use romanzipp\Twitch\Providers\TwitchServiceProvider;
-use romanzipp\Twitch\Twitch;
+use BulgarianHealer\Twitch\Facades\Twitch as TwitchFacade;
+use BulgarianHealer\Twitch\Providers\TwitchServiceProvider;
+use BulgarianHealer\Twitch\Twitch;
 use stdClass;
 
 abstract class TestCase extends BaseTestCase

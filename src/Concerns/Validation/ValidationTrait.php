@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Validation;
+namespace BulgarianHealer\Twitch\Concerns\Validation;
 
 use InvalidArgumentException;
 

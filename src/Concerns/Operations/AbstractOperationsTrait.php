@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Operations;
+namespace BulgarianHealer\Twitch\Concerns\Operations;
 
-use romanzipp\Twitch\Helpers\Paginator;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Helpers\Paginator;
+use BulgarianHealer\Twitch\Result;
 
 trait AbstractOperationsTrait
 {

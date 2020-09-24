@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Helpers\Paginator;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Helpers\Paginator;
+use BulgarianHealer\Twitch\Result;
 
 trait GamesTrait
 {
@@ -20,8 +20,8 @@ trait GamesTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-top-games
      *
      * @param array $parameters
-     * @param \romanzipp\Twitch\Helpers\Paginator|null $paginator Paginator instance
-     * @return \romanzipp\Twitch\Result Result instance
+     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator Paginator instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function getTopGames(array $parameters = [], Paginator $paginator = null): Result
     {
@@ -35,7 +35,7 @@ trait GamesTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-games
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result Result instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function getGames(array $parameters = []): Result
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Operations;
+namespace BulgarianHealer\Twitch\Concerns\Operations;
 
 trait AbstractValidationTrait
 {

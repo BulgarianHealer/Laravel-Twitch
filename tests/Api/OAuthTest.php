@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Tests\Api;
+namespace BulgarianHealer\Twitch\Tests\Api;
 
-use romanzipp\Twitch\Enums\GrantType;
-use romanzipp\Twitch\Exceptions\RequestRequiresClientSecretException;
-use romanzipp\Twitch\Tests\TestCases\ApiTestCase;
+use BulgarianHealer\Twitch\Enums\GrantType;
+use BulgarianHealer\Twitch\Exceptions\RequestRequiresClientSecretException;
+use BulgarianHealer\Twitch\Tests\TestCases\ApiTestCase;
 
 class OAuthTest extends ApiTestCase
 {

@@ -4,7 +4,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use romanzipp\Twitch\Twitch;
+use BulgarianHealer\Twitch\Twitch;
 
 $markdown = collect(class_uses(Twitch::class))
     ->map(function ($trait) {

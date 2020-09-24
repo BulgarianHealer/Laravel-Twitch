@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Result;
 
 trait BitsTrait
 {
@@ -18,7 +18,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-cheermotes
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getCheermotes(array $parameters = []): Result
     {
@@ -33,7 +33,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference/#get-bits-leaderboard
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getBitsLeaderboard(array $parameters = []): Result
     {
@@ -46,7 +46,7 @@ trait BitsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-extension-transactions
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getExtensionTransactions(array $parameters = []): Result
     {

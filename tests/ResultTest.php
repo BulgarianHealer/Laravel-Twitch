@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Tests;
+namespace BulgarianHealer\Twitch\Tests;
 
 use GuzzleHttp\Psr7\Response;
-use romanzipp\Twitch\Result;
-use romanzipp\Twitch\Tests\TestCases\TestCase;
+use BulgarianHealer\Twitch\Result;
+use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
 
 class ResultTest extends TestCase
 {

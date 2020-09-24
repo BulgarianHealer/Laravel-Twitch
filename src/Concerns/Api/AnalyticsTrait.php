@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Result;
 
 trait AnalyticsTrait
 {
@@ -19,7 +19,7 @@ trait AnalyticsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-extension-analytics
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getExtensionAnalytics(array $parameters = []): Result
     {
@@ -38,7 +38,7 @@ trait AnalyticsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-game-analytics
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getGameAnalytics(array $parameters = []): Result
     {

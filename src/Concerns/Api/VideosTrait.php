@@ -1,11 +1,11 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Helpers\Paginator;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Helpers\Paginator;
+use BulgarianHealer\Twitch\Result;
 
 trait VideosTrait
 {
@@ -18,8 +18,8 @@ trait VideosTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-videos
      *
      * @param array $parameters
-     * @param \romanzipp\Twitch\Helpers\Paginator|null $paginator
-     * @return \romanzipp\Twitch\Result Result instance
+     * @param \BulgarianHealer\Twitch\Helpers\Paginator|null $paginator
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function getVideos(array $parameters = [], Paginator $paginator = null): Result
     {

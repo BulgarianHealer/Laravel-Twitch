@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Tests;
+namespace BulgarianHealer\Twitch\Tests;
 
 use InvalidArgumentException;
-use romanzipp\Twitch\Concerns\Validation\ValidationTrait;
-use romanzipp\Twitch\Tests\TestCases\TestCase;
+use BulgarianHealer\Twitch\Concerns\Validation\ValidationTrait;
+use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
 
 class ValidationTest extends TestCase
 {

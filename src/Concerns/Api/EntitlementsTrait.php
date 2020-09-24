@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Concerns\Api;
+namespace BulgarianHealer\Twitch\Concerns\Api;
 
-use romanzipp\Twitch\Concerns\Operations\AbstractOperationsTrait;
-use romanzipp\Twitch\Concerns\Operations\AbstractValidationTrait;
-use romanzipp\Twitch\Result;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractOperationsTrait;
+use BulgarianHealer\Twitch\Concerns\Operations\AbstractValidationTrait;
+use BulgarianHealer\Twitch\Result;
 
 trait EntitlementsTrait
 {
@@ -17,7 +17,7 @@ trait EntitlementsTrait
      * @see https://dev.twitch.tv/docs/api/reference#create-entitlement-grants-upload-url
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result Result instance
+     * @return \BulgarianHealer\Twitch\Result Result instance
      */
     public function createEntitlementUrl(array $parameters = []): Result
     {
@@ -33,7 +33,7 @@ trait EntitlementsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-code-status
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getEntitlementsCodeStatus(array $parameters = []): Result
     {
@@ -48,7 +48,7 @@ trait EntitlementsTrait
      * @see https://dev.twitch.tv/docs/api/reference#get-drops-entitlements
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function getDropsEntitlements(array $parameters = []): Result
     {
@@ -63,7 +63,7 @@ trait EntitlementsTrait
      * @see https://dev.twitch.tv/docs/api/reference#redeem-code
      *
      * @param array $parameters
-     * @return \romanzipp\Twitch\Result
+     * @return \BulgarianHealer\Twitch\Result
      */
     public function redeemEntitlementsCode(array $parameters = []): Result
     {

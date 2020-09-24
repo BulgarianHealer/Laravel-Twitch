@@ -1,9 +1,9 @@
 <?php
 
-namespace romanzipp\Twitch\Tests;
+namespace BulgarianHealer\Twitch\Tests;
 
-use romanzipp\Twitch\Objects\AccessToken;
-use romanzipp\Twitch\Tests\TestCases\TestCase;
+use BulgarianHealer\Twitch\Objects\AccessToken;
+use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
 
 class AccessTokenExpirationTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace romanzipp\Twitch\Tests;
+namespace BulgarianHealer\Twitch\Tests;
 
-use romanzipp\Twitch\Facades\Twitch as TwitchFacade;
-use romanzipp\Twitch\Tests\TestCases\TestCase;
-use romanzipp\Twitch\Twitch;
+use BulgarianHealer\Twitch\Facades\Twitch as TwitchFacade;
+use BulgarianHealer\Twitch\Tests\TestCases\TestCase;
+use BulgarianHealer\Twitch\Twitch;
 
 class ServiceInstantiationTest extends TestCase
 {
